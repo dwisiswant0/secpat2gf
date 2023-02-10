@@ -16,6 +16,8 @@ $ pip3 install secpat2gf
 $ git clone https://github.com/dwisiswant0/secpat2gf
 $ cd secpat2gf/
 $ pip3 install -r requirements.txt
+$ python3 -m build
+$ pip3 install dist/secpat2gf-*.whl --force-reinstall
 ```
 
 ## Usage
