@@ -8,7 +8,7 @@ def main():
     logging.basicConfig(format='[%(asctime)s] %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.INFO)
 
     gf_dir = os.path.join(os.environ.get("HOME"), ".gf")
-    gf_flags = "-aHnPr"
+    gf_flags = "-aHnoPr"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--rule-file", required=True, type=str, help="path to rule file/URL")

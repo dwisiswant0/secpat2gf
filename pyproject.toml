@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "secpat2gf"
-version = "1.0.0"
+version = "1.0.1"
 description = "convert secret patterns to gf compatible"
 readme = "README.md"
 authors = [{ name = "Dwi Siswanto", email = "me@dw1.io" }]
