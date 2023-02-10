@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "secpat2gf"
+version = "1.0.0"
+description = "convert secret patterns to gf compatible"
+readme = "README.md"
+authors = [{ name = "Dwi Siswanto", email = "me@dw1.io" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "PyYAML>=6.0",
+    "requests>=2.25.1"
+]
+requires-python = ">=3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/dwisiswant0/secpat2gf"
+"Bug Tracker" = "https://github.com/dwisiswant0/secpat2gf/issues"
+
+[project.scripts]
+secpat2gf = "secpat2gf.__main__:main"
