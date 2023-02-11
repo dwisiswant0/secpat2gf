@@ -100,6 +100,7 @@ See [workaround](https://github.com/dwisiswant0/gf-secrets#workaround-recycle) f
 
 - [secrets-patterns-db](https://github.com/mazen160/secrets-patterns-db) - Secrets Patterns DB: The largest open-source Database for detecting secrets, API keys, passwords, tokens, and more.
 - [gf](https://github.com/tomnomnom/gf) - A wrapper around grep, to help you grep for things.
+- [gfx](https://github.com/dwisiswant0/gfx) - Improved version of gf by @tomnomnom.
 - [gf-secrets](https://github.com/dwisiswant0/gf-secrets) - Secret and/or credential patterns used for gf.
 
 ## License
