@@ -11,6 +11,7 @@ class secpat2gf:
         self.file = args.rule_file
         self.flags = args.flags
         self.save = args.save
+        self.engine = args.engine
         self.main()
 
     def main(self):
@@ -48,6 +49,10 @@ class secpat2gf:
             "flags": self.flags,
             "pattern": pattern
         }
+
+        if self.engine is not "grep":
+            data["engine"] = self.engine
+
         return json.dumps(data, indent=2)
 
     def _slugify(self, value):

@@ -9,9 +9,11 @@ def main():
 
     gf_dir = os.path.join(os.environ.get("HOME"), ".gf")
     gf_flags = "-aHnoPr"
+    gf_engine = "grep"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--rule-file", required=True, type=str, help="path to rule file/URL")
+    parser.add_argument("-e", "--engine", default=gf_engine, type=str, help="set custom engine (default: %s)" % gf_engine)
     parser.add_argument("-f", "--flags", default=gf_flags, type=str, help="grep flags (default: %s)" % gf_flags)
     parser.add_argument("-s", "--save", action="store_true", help="save to %s instead of stdout" % gf_dir)
 

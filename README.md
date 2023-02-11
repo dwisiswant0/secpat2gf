@@ -24,15 +24,17 @@ $ pip3 install dist/secpat2gf-*.whl --force-reinstall
 
 ```console
 $ secpat2gf --help
-usage: secpat2gf [-h] -r RULE_FILE [-f FLAGS] [-s]
+usage: secpat2gf [-h] -r RULE_FILE [-e ENGINE] [-f FLAGS] [-s]
 
 options:
   -h, --help            show this help message and exit
   -r RULE_FILE, --rule-file RULE_FILE
                         path to rule file/URL
+  -e ENGINE, --engine ENGINE
+                        set custom engine (default: grep)
   -f FLAGS, --flags FLAGS
-                        grep flags (default: -aHnPr)
-  -s, --save            save to $HOME/.gf instead of stdout
+                        grep flags (default: -aHnoPr)
+  -s, --save            save to /home/dw1/.gf instead of stdout
 ```
 
 ### Example
